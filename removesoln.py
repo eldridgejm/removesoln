@@ -43,7 +43,7 @@ def main():
 
     document = TexSoup(contents)
 
-    for node in document.find_all(SOLUTION_ENVIRONMENT_NAMg):
+    for node in document.find_all(SOLUTION_ENVIRONMENT_NAME):
         lines = str(node).split('\n')
         leading_whitespace = get_leading_whitespace(lines[-1])
         blank_node = make_blank_solution_node(leading_whitespace)
