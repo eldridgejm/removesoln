@@ -15,6 +15,17 @@ REPLACE_WITH = dedent(
         r"""
         \begin{soln}
             % write solution below
+            %
+            % to include an image, place it in this problem's directory alongside
+            % problem.tex and write (changing the scale and file name as appropriate):
+            %
+            %   \includegraphics[scale=.5]{\thisdir/my_image.png}
+            %
+            % to include code, put the code in its own file and include it in
+            % this problem's directory and write (changing the file name as appropriate):
+            %
+            %   \inputminted{\thisdir/my_code.py}
+            %
 
         \end{soln}
         """)
